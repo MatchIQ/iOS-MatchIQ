@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kuf-oN-f7h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MatchIQ-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MatchIQ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,104 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YnT-ap-ZZj">
+                                <rect key="frame" x="16" y="64" width="343" height="583"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OFA-1h-RJc">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="583"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iSm-HL-TOj">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="583"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iSm-HL-TOj" secondAttribute="height" multiplier="343:583" id="8oC-Ff-lu0"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7i1-yR-kp6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="0.0"/>
+                                <items>
+                                    <navigationItem title="MatchIQ" id="aSA-wf-gkX"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="7i1-yR-kp6" secondAttribute="trailing" constant="-16" id="0ze-kf-o2m"/>
+                            <constraint firstItem="7i1-yR-kp6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aZ-s6-DzL"/>
+                            <constraint firstAttribute="bottom" secondItem="YnT-ap-ZZj" secondAttribute="bottom" constant="20" symbolic="YES" id="M2l-2s-1WC"/>
+                            <constraint firstItem="YnT-ap-ZZj" firstAttribute="top" secondItem="7i1-yR-kp6" secondAttribute="bottom" id="iDp-4K-HzD"/>
+                            <constraint firstItem="7i1-yR-kp6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yi1-7z-XND"/>
+                            <constraint firstItem="YnT-ap-ZZj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yqn-qN-p0i"/>
+                            <constraint firstItem="YnT-ap-ZZj" firstAttribute="centerX" secondItem="7i1-yR-kp6" secondAttribute="centerX" id="ziR-bZ-7cM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="MatchIQ" id="da2-Xr-U7K">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="GdC-gO-K1X">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kEA-lI-Okx">
+                                <rect key="frame" x="273" y="7" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TABLE VIEW"/>
+                            </button>
+                            <connections>
+                                <segue destination="hSF-xG-Zhd" kind="show" id="SQO-4A-jWx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="card" destination="iSm-HL-TOj" id="eTa-Zd-i6i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="554" y="-57"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="LM1-Tm-Heo">
+            <objects>
+                <tableViewController id="hSF-xG-Zhd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aJc-7p-3Ke">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VhI-xU-ylM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VhI-xU-ylM" id="32V-Iq-ex8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hSF-xG-Zhd" id="cxI-ls-rmJ"/>
+                            <outlet property="delegate" destination="hSF-xG-Zhd" id="aov-tY-5Bd"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPc-LF-B6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1340" y="-68"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BkW-uP-ppK">
+            <objects>
+                <navigationController id="kuf-oN-f7h" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pmA-oI-AUR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SJ7-pG-ERW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7d4-ko-aVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="-57"/>
         </scene>
     </scenes>
 </document>
