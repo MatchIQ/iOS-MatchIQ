@@ -58,14 +58,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MatchIQ" id="da2-Xr-U7K">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="GdC-gO-K1X">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kEA-lI-Okx">
-                                <rect key="frame" x="273" y="7" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TABLE VIEW"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="abq-lp-zMd">
                             <connections>
-                                <segue destination="hSF-xG-Zhd" kind="show" id="SQO-4A-jWx"/>
+                                <segue destination="hSF-xG-Zhd" kind="show" id="KvY-8x-lLW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -86,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VhI-xU-ylM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="card" id="VhI-xU-ylM">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VhI-xU-ylM" id="32V-Iq-ex8">
