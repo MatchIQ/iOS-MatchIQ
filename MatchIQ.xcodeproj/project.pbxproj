@@ -322,6 +322,7 @@
 				C173EE081DEF3E8C0003EF06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
