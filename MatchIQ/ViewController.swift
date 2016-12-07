@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import CoreData
+
+//import SwiftyJSON
 
 class ViewController: UIViewController {
+    
+    
+    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     @IBOutlet weak var card: UIImageView!
     
@@ -24,8 +31,10 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-//        jsonParser()
-        csvParser()
+        
+        
+//       parseJSON()
+        
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -145,51 +154,90 @@ class ViewController: UIViewController {
     }
     
     
-    func csvParser(){
-        do {
-            let fileManager = FileManager.default
-            let path = fileManager.currentDirectoryPath
-            print(path)
-            let csvData = try String(contentsOfFile: path + "data.csv")
-            let csv = csvData.csvRows()
-            for row in csv {
-                print(row)
-            }
-        } catch {  
-            print(error)  
-        }
-    }
     
-    enum JSONError: String, Error {
-        case NoData = "ERROR: no data"
-        case ConversionFailed = "ERROR: conversion from JSON failed"
-    }
-    
-    func jsonParser() {
-        let urlPath = "http://open.datapunt.amsterdam.nl/Attracties.json"
-        guard let endpoint = URL(string: urlPath) else {
-            print("Error creating endpoint")
-            return
-        }
-        let request = URLRequest(url: endpoint)
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
+    func parseJSON(){
+        let entity =  NSEntityDescription.entity(forEntityName: "Cards", in:managedContext)
+        let cards = NSManagedObject(entity: entity!, insertInto: managedContext)
+        
+        removeAllFromManagedContext()
+        
+        let jsonpath = Bundle.main.path(forResource: "data", ofType: "json")
+        let jsondata = NSData(contentsOfFile: jsonpath!)
+        
+        
+        let json = JSON(data: jsondata as! Data)
+        
+        for (_,subJson):(String, JSON) in json {
+            
+//            print("id : " ,subJson["id"].stringValue)
+            cards.setValue(subJson["id"].stringValue, forKey: "id")
+            
+//            print("TitleEN : " ,subJson["TitleEN"].stringValue)
+            cards.setValue(subJson["TitleEN"].stringValue, forKey: "title")
+            
+//            print("ShortdescriptionEN : " ,subJson["ShortdescriptionEN"].stringValue)
+            cards.setValue(subJson["ShortdescriptionEN"].stringValue, forKey: "shrt_description")
+            
+//            print("Thumbnail : " ,subJson["Thumbnail"].stringValue)
+            cards.setValue(subJson["Thumbnail"].stringValue, forKey: "thumbnail")
+            
+            
+//            print("Adres : " ,subJson["Adres"].stringValue)
+            cards.setValue(subJson["Adres"].stringValue, forKey: "address")
+            
+            
+//            print("City : " ,subJson["City"].stringValue)
+            cards.setValue(subJson["City"].stringValue, forKey: "city")
+            
+            
+//            print("Zipcode : " ,subJson["Zipcode"].stringValue)
+            cards.setValue(subJson["Zipcode"].stringValue, forKey: "zipcode")
+            
+            
+//            print("Latitude : " ,subJson["Latitude"].stringValue)
+            cards.setValue(subJson["Latitude"].stringValue, forKey: "latitude")
+            
+            
+//            print("Longitude : " ,subJson["Longitude"].stringValue)
+            cards.setValue(subJson["Longitude"].stringValue, forKey: "longitude")
+            
+            
+//            print("Tripadvisor ratting : " ,subJson["Tripadvisor ratting"].stringValue)
+            cards.setValue(subJson["Tripadvisor ratting"].stringValue, forKey: "trip_advisor_rating")
+            
+            
+//            print("user rating  : " ,subJson["user rating"].stringValue)
+            cards.setValue(subJson["user rating"].stringValue, forKey: "user_rating")
+            
+            
+           
+            
             do {
-                guard let data = data else {
-                    throw JSONError.NoData
-                }
-                guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary else {
-                    throw JSONError.ConversionFailed
-                }
-                print(json)
-            } catch let error as JSONError {
-                print(error.rawValue)
-            } catch let error as NSError {
-                print(error.debugDescription)
+                try managedContext.save()
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
             }
-            }.resume()
+            
+//            for(key,value):(String,JSON) in subJson{
+//                print(key," : ",value)
+//            }
+        }
+        
+        
+    }
+    func removeAllFromManagedContext(){
+        let fetchRequest = NSFetchRequest<Cards>(entityName: "Cards")
+        
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest as! NSFetchRequest<NSFetchRequestResult> )
+        
+        do {
+            try managedContext.execute(deleteRequest)
+        } catch let error as NSError {
+            print("Could not delete \(error), \(error.userInfo)")
+        }
     }
     
-    
+
     
     
 }

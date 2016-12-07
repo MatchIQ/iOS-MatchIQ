@@ -17,42 +17,6 @@ class TableViewController : UITableViewController{
     
     @IBOutlet var TheTableView: UITableView!
     
-    func removeAllFromManagedContext(){
-        let fetchRequest = NSFetchRequest<Cards>(entityName: "Cards")
-        
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest as! NSFetchRequest<NSFetchRequestResult> )
-        
-        do {
-            try managedContext.execute(deleteRequest)
-        } catch let error as NSError {
-            print("Could not delete \(error), \(error.userInfo)")
-        }
-    }
-    
-    
-    func insertIntoManagedContext(){
-        
-        let entity =  NSEntityDescription.entity(forEntityName: "Cards", in:managedContext)
-        
-        let cards = NSManagedObject(entity: entity!, insertInto: managedContext)
-        
-        
-        let date = NSDate()
-        let calendar = NSCalendar.current
-        let hour = calendar.component(.hour, from: date as Date)
-        let minutes = calendar.component(.minute, from: date as Date)
-        let seconds = calendar.component(.second, from: date as Date)
-        let nanosec = calendar.component(.nanosecond, from: date as Date)
-        cards.setValue(nanosec, forKey: "id")
-        
-        do {
-            try managedContext.save()
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-        
-    }
-    
     
     override func viewDidLoad() {
         
@@ -64,7 +28,7 @@ class TableViewController : UITableViewController{
         
 //        removeAllFromManagedContext()
         
-        insertIntoManagedContext()
+//        insertIntoManagedContext()
         
         
         
