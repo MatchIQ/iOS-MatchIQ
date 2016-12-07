@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		C11ABB351DF823A1006319CE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11ABB341DF823A1006319CE /* SettingViewController.swift */; };
 		C11ABB411DF8603C006319CE /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = C11ABB401DF8603C006319CE /* data.csv */; };
-		C11ABB451DF8634D006319CE /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C11ABB441DF8634D006319CE /* data.json */; };
 		C11ABB471DF86580006319CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11ABB461DF86580006319CE /* SwiftyJSON.swift */; };
+		C11ABB4B1DF8865A006319CE /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C11ABB4A1DF8865A006319CE /* data.json */; };
 		C173EDF51DEF3E8C0003EF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173EDF41DEF3E8C0003EF06 /* AppDelegate.swift */; };
 		C173EDF71DEF3E8C0003EF06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173EDF61DEF3E8C0003EF06 /* ViewController.swift */; };
 		C173EDFA1DEF3E8C0003EF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C173EDF81DEF3E8C0003EF06 /* Main.storyboard */; };
@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		C11ABB341DF823A1006319CE /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C11ABB401DF8603C006319CE /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = SOURCE_ROOT; };
-		C11ABB441DF8634D006319CE /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		C11ABB461DF86580006319CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		C11ABB4A1DF8865A006319CE /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../data.json; sourceTree = "<group>"; };
 		C173EDF11DEF3E8C0003EF06 /* MatchIQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchIQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C173EDF41DEF3E8C0003EF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C173EDF61DEF3E8C0003EF06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +74,9 @@
 		C173EDF31DEF3E8C0003EF06 /* MatchIQ */ = {
 			isa = PBXGroup;
 			children = (
+				C11ABB4A1DF8865A006319CE /* data.json */,
 				C11ABB461DF86580006319CE /* SwiftyJSON.swift */,
 				C11ABB401DF8603C006319CE /* data.csv */,
-				C11ABB441DF8634D006319CE /* data.json */,
 				C173EE091DEF3FA10003EF06 /* m0.jpg */,
 				C173EE0A1DEF3FA10003EF06 /* m1.jpg */,
 				C173EE0B1DEF3FA10003EF06 /* m2.jpg */,
@@ -157,11 +157,11 @@
 				C173EE0E1DEF3FA10003EF06 /* m1.jpg in Resources */,
 				C173EE021DEF3E8C0003EF06 /* LaunchScreen.storyboard in Resources */,
 				C173EE101DEF3FA10003EF06 /* m3.jpg in Resources */,
-				C11ABB451DF8634D006319CE /* data.json in Resources */,
 				C173EE0F1DEF3FA10003EF06 /* m2.jpg in Resources */,
 				C11ABB411DF8603C006319CE /* data.csv in Resources */,
 				C173EDFF1DEF3E8C0003EF06 /* Assets.xcassets in Resources */,
 				C173EE0D1DEF3FA10003EF06 /* m0.jpg in Resources */,
+				C11ABB4B1DF8865A006319CE /* data.json in Resources */,
 				C173EDFA1DEF3E8C0003EF06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

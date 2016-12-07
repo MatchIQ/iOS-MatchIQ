@@ -1,6 +1,6 @@
  [
   {
-  "id": "1",
+  "id": 1,
   "TitleEN": "FloraHolland flower auction",
   "ShortdescriptionEN": "FloraHolland in Aalsmeer is the world's largest flower auction, and visitors are invited in to watch the buzzing activity of this impressive auction.  ",
   "City": "AALSMEER",
@@ -11,10 +11,10 @@
   "Urls": "http://www.floraholland.com/nl/over-floraholland/bezoek-de-veiling/aalsmeer/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110216/93b27501-1954-4ce2-9874-78705119d23a.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "2",
+  "id": 2,
   "TitleEN": "Korenmolen De Leeuw",
   "ShortdescriptionEN": "Korenmolen De Leeuw is a grinding windmill that can be found in Aalsmeer, a town located just south of Amsterdam.",
   "City": "AALSMEER",
@@ -25,10 +25,10 @@
   "Urls": "http://www.molendeleeuw.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/f7/f7430b9e-2851-48de-9a94-307b96deb1e3/9dcb58b4-929d-4ef9-8638-9cb0bbaa5a19.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "3",
+  "id": 3,
   "TitleEN": "Watertoren Aalsmeer",
   "ShortdescriptionEN": "Watertoren Aalsmeer is an elaborately decorated water tower in Aalsmeer, located on the edge of the Westeinderplassen. It was built in the Art Deco style and took two years to construct. ",
   "City": "AALSMEER",
@@ -39,10 +39,10 @@
   "Urls": "http://www.aalsmeer-watertoren.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20130225/9fbe3d72-82e8-44cc-8501-df83045a1a64.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "4",
+  "id": 4,
   "TitleEN": "Almere Centrum",
   "ShortdescriptionEN": "Almere, still considered the youngest city in the Netherlands, is located just across the IJmeer from Amsterdam. Its modernity makes it a feast for fans of architecture, those after a spot of retail therapy will find a true shopper?s paradise and there?s also PIT, an interactive family museum allowing visitors to explore the work of the fire brigade and police. But don?t forget to venture outside the city to visit the nearby Oostvaardersplassen, a nature reserve offering a delightful day out amongst stunning scenery.",
   "City": "ALMERE",
@@ -53,10 +53,10 @@
   "Urls": "http://www.almerecentrum.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20141016/c61ac26e-789e-420c-bea1-e736e022613c.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "5",
+  "id": 5,
   "TitleEN": "Architecture in Almere",
   "ShortdescriptionEN": "When it comes to architecture, Almere ranks an impressive third in the Netherlands, and actually first when looking at modern architecture in European New Towns. The city is home to high profile buildings designed by leading architects including Teun Koolhaas, Herman Hertzbergen and Liesbeth van der Pol. ",
   "City": "ALMERE",
@@ -67,10 +67,10 @@
   "Urls": "http://www.vvvalmere.nl/nl/architectuur-almere",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20141016/1228acbb-6999-4d5b-94c5-6e59e83e0757.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "6",
+  "id": 6,
   "TitleEN": "De Oostvaardersplassen",
   "ShortdescriptionEN": "The Oostvaardersplassen is a unique nature reserve located between Lelystad and Almere. Comprised of 56 km2 of protected marshlands and fields, it serves as a migration area for birds and makes for an amazing spot for a hike or a day of bird watching.",
   "City": "ALMERE",
@@ -81,10 +81,10 @@
   "Urls": "http://www.staatsbosbeheer.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110510/11116eca-b950-48d5-bb99-e3fffd189d0f.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "7",
+  "id": 7,
   "TitleEN": "Amsteltuin vineyard",
   "ShortdescriptionEN": "Just a short distance from Amsterdam, you?ll find Amsteltuin vineyard in the residential village of Amstelveen. This green, peaceful location has more than 3,500 grape vines spread across 1.5 hectares. In addition to making delicious and interesting wines, Amsteltuin provides constructive activities and a relaxing environment for people with (temporary) disabilities.",
   "City": "AMSTELVEEN",
@@ -95,10 +95,10 @@
   "Urls": "http://www.amsteltuin.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101118/35114dc1-00c5-4278-9d1f-054790ad992f.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "8",
+  "id": 8,
   "TitleEN": "Amsterdamse Bos (Amsterdam Forest)",
   "ShortdescriptionEN": "Located on the edge of the city, the Amsterdamse Bos (Amsterdam Forest) is Amsterdam's largest park and recreational area. The lush forests and grassy meadows offer plenty of space for a relaxing picnic with family or friends, and the park is crossed by many kilometres of well-marked walking and cycling paths. ",
   "City": "AMSTELVEEN",
@@ -109,10 +109,10 @@
   "Urls": "http://www.amsterdamsebos.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101207/41f22437-8484-4d11-bba8-4bcf97b37843.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "9",
+  "id": 9,
   "TitleEN": "Museum Jan van der Togt",
   "ShortdescriptionEN": "The Museum Jan van der Togt is located in a modern building in Amstelveen, a town just south of Amsterdam. It offers visitors a large collection of modern art that includes paintings, glass works and sculptures. ",
   "City": "AMSTELVEEN",
@@ -123,10 +123,10 @@
   "Urls": "http://www.jvdtogt.nl,http://www.facebook.com/museumjanvandertogt",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101206/8863d451-9de3-4e0d-981e-caa83d370031.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "10",
+  "id": 10,
   "TitleEN": "Rembrandt Hoeve",
   "ShortdescriptionEN": "The Rembrandt Hoeve is a traditional farm specialized in making cheese and clogs. Located just outside Amsterdam in the middle of the Dutch polder, this farm dates back to the 15th century. With windmills and farms dotting the landscape, it?s hard to believe that the farm is only a 10-minute drive from the centre of Amsterdam. The Rembrandt Hoeve is open to visitors seven days a week.",
   "City": "AMSTELVEEN",
@@ -137,10 +137,10 @@
   "Urls": "http://www.rembrandthoeveamsterdam.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/8697a81f-a7f9-4806-a274-faf6f95d046e.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "11",
+  "id": 11,
   "TitleEN": "A'DAM Toren",
   "ShortdescriptionEN": "Looming tall over the Amsterdam North skyline, this landmark 22-floor tower is home to a selection of bars, restaurants and a rooftop observation deck with stunning views across Amsterdam.",
   "City": "AMSTERDAM",
@@ -151,10 +151,10 @@
   "Urls": "http://adamtoren.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/75/75118f41-a7f7-4b8a-a381-64883eff35e8/00eb9c3b-1abf-4da8-8a7b-1467aee9f578.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "12",
+  "id": 12,
   "TitleEN": "Albert Cuypmarkt",
   "ShortdescriptionEN": "There's no place like the Albert Cuyp street market to discover Amsterdam's typical sense of humour and laid back atmosphere. The Albert Cuypmarkt is the largest and most popular outdoor market in the Netherlands, with 260 stands operating six days a week selling everything from Vietnamese spring rolls to freshly made stroopwafels.",
   "City": "AMSTERDAM",
@@ -165,10 +165,10 @@
   "Urls": "http://www.albertcuypmarkt.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/0a/0aa4879d-90f3-49f4-b775-6114e807390d/9aaad4f5-51e9-4395-b4c7-af75c12d2bb2.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "13",
+  "id": 13,
   "TitleEN": "Amstelkerk",
   "ShortdescriptionEN": "Built in the 17th century, this wooden church can be found on the Amstelveld, one of the prettiest squares in Amsterdam. It was designed by Daniel Stalpaert, the renowned Dutch architect who helped create the Royal Palace, several city gates and 's Lands Zeemagazijn, the current home of the Scheepvaartmuseum.",
   "City": "AMSTERDAM",
@@ -179,10 +179,10 @@
   "Urls": "http://www.stadsherstel.nl/cultuuragenda",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101026/e22c89c1-f4d7-45ce-93b8-8cd791fe7741.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "14",
+  "id": 14,
   "TitleEN": "Amstelpark",
   "ShortdescriptionEN": "Located the southern edge of Amsterdam, Amstelpark is an expansive park filled with a multitude of flower gardens, a playground and a petting zoo. There is also an on-site gallery with two exhibition spaces: the Glazen Huis (glass house) and the Orangerie. ",
   "City": "AMSTERDAM",
@@ -193,10 +193,10 @@
   "Urls": "http://www.speeltuin-amstelpark.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101122/097c22bb-11a9-44f2-b621-38208e7f09c4.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "15",
+  "id": 15,
   "TitleEN": "Amsterdam Cheese Museum",
   "ShortdescriptionEN": "Dutch cheese has a more than 600 years long tradition and the names of different sorts of cheese are often taken from different cities in the Netherlands ? Gouda, Edam, Leerdammer, Leyden, Maaslander, Maasdam and of course a gourmet Old Amsterdam.",
   "City": "AMSTERDAM",
@@ -207,10 +207,10 @@
   "Urls": "http://www.facebook.com/AmsterdamCheeseMuseum",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20120731/2ef0ff7f-b5e8-454c-af4c-c84c5801b4d5.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "16",
+  "id": 16,
   "TitleEN": "Amsterdam Science Park",
   "ShortdescriptionEN": "Amsterdam Science Park is located on the eastern side of Amsterdam. The complex combines science with working and living space, covering an area of 70 hectares, which is the size of 98 football pitches.",
   "City": "AMSTERDAM",
@@ -221,10 +221,10 @@
   "Urls": "http://www.amsterdamsciencepark.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/1b0977e0-7313-45d0-b3c0-7ecbc000676f.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "17",
+  "id": 17,
   "TitleEN": "Amsterdam Tattoo Museum",
   "ShortdescriptionEN": "Amsterdam Tattoo Museum will open it's doors fall 2011.",
   "City": "AMSTERDAM",
@@ -235,10 +235,10 @@
   "Urls": "http://www.amsterdamtattoomuseum.com",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110714/73625582-1c80-469f-a51e-5bd287572668.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "18",
+  "id": 18,
   "TitleEN": "Amsterdam Tulip Museum",
   "ShortdescriptionEN": "Located in the Jordaan district, the Amsterdam Tulip Museum pays tribute to this delicate flower that has ignited great passion and envy over the centuries. The museum details Holland's fascinating horticultural story, including a phenomenon known as &quot:Tulipomania&quot:.",
   "City": "AMSTERDAM",
@@ -249,10 +249,10 @@
   "Urls": "http://www.amsterdamtulipmuseum.com,http://www.facebook.com/pages/Amsterdam-Tulip-Museum",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101122/29671b74-fc2c-4975-8703-f116b5e8a671.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "19",
+  "id": 19,
   "TitleEN": "Amsterdamse Poort",
   "ShortdescriptionEN": "At this modern shopping centre in Amsterdam Zuidoost, you'll find not only the standard C&As and Coolcats that grace many Dutch high streets, but also lots of exotic eateries, delis and tokos (Indonesian takeaways).",
   "City": "AMSTERDAM",
@@ -263,10 +263,10 @@
   "Urls": "http://www.amsterdamsepoort.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/c3/c3e9dbe7-4acc-4f62-a3d4-781556083b88/6be97f7e-633c-4922-889a-ae4350a5a00f.jpg",
   "Tripadvisor ratting": "3",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "20",
+  "id": 20,
   "TitleEN": "Anne Frank House",
   "ShortdescriptionEN": "Anne Frank is one of Amsterdam's most well known former residents. The Anne Frank House at Prinsengracht 263 in Amsterdam is where she lived in hiding with her family for more than two years during World War II. Now converted into a museum it contains a sobering exhibition about the persecution of the Jews during the war, as well as discrimination in general.",
   "City": "AMSTERDAM",
@@ -277,10 +277,10 @@
   "Urls": "http://www.annefrank.org,http://www.facebook.com/annefrankhouse",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101028/e8955076-58ec-467f-ac29-58905a01bfa4.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "21",
+  "id": 21,
   "TitleEN": "ARTIS Amsterdam Royal Zoo",
   "ShortdescriptionEN": "ARTIS Amsterdam Royal Zoo was the first zoo to be established in the Netherlands, and it?s located right in the centre of Amsterdam. It?s a place where nature and cultural heritage come together: a place where history has been created since 1838 and where new stories are created daily. Come experience them for yourself.",
   "City": "AMSTERDAM",
@@ -291,10 +291,10 @@
   "Urls": "http://www.artis.nl,http://www.amsterdamticketshop.nl/1136",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/92/9265439c-bc12-4bab-b907-5d99aa1b632e/d5af92ea-0536-4b49-94ff-1525f61d11e8.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "22",
+  "id": 22,
   "TitleEN": "Begijnhofkapel",
   "ShortdescriptionEN": "The Begijnhofkapel (Begijnhof chapel) is also known as the Johannes en Ursula Kerk.  Built in 1672, the chapel serves as a centre for meditation and prayer. On Sundays, the chapel holds services in both Dutch and French.",
   "City": "AMSTERDAM",
@@ -305,10 +305,10 @@
   "Urls": "http://www.begijnhofamsterdam.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101109/3d938a04-cc85-48e1-94a0-842c3bac256a.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "23",
+  "id": 23,
   "TitleEN": "Blijburg aan Zee",
   "ShortdescriptionEN": "Sandy beach by the water with a bohemian vibe in the eastern part of IJburg in Amsterdam. In the summer, take in the sun and sand, food and drinks, live music and evening campfires. In autumn and winter you can still enjoy the amazing views from Blijburg aan Zee, as fortunately the cafÃƒÂ© is extremely cosy.",
   "City": "AMSTERDAM",
@@ -319,10 +319,10 @@
   "Urls": "http://www.blijburg.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/6b/6babd8fb-1c7c-4d43-99ff-357a1b1a6d6c/3c3bcb36-d53f-4a03-9924-53afc3438b42.jpg",
   "Tripadvisor ratting": "3,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "24",
+  "id": 24,
   "TitleEN": "Brandt en Levie",
   "ShortdescriptionEN": "Sausage kings Brandt & Levie have conquered Amsterdam in very short time from their Houthavens factory. You'll find them serving up delicious sizzlers from their pink food truck at many of Amsterdam's food festivals and other events. ",
   "City": "AMSTERDAM",
@@ -333,10 +333,10 @@
   "Urls": "http://brandtenlevie.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/80/809d60c1-bd40-473b-b5b2-144bc2529d17/17d7ec27-0dae-47bc-bd5b-c03a90e7d86b.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "25",
+  "id": 25,
   "TitleEN": "Canal Cruise by open boat (75 min)",
   "ShortdescriptionEN": "Discover Amsterdam's narrowest canals and hidden corners on this 75-minute tour on a small open boat. Thanks to its small size, the boat can reach places regular canal cruise boats cannot manoeuvre through. Therefore, in addition to boating on the River Amstel and through the popular 17th-century Canal Ring, the tour visits the narrow canals of the Red Light District.",
   "City": "AMSTERDAM",
@@ -347,10 +347,10 @@
   "Urls": "http://www.tours-tickets.com",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20140702/ab852664-6fe4-48a7-af38-d3b6e3753a8a.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "26",
+  "id": 26,
   "TitleEN": "De Waag",
   "ShortdescriptionEN": "Amsterdam's House of Weights, known locally as De Waag, is a remarkable monument situated on the Nieuwmarkt.",
   "City": "AMSTERDAM",
@@ -361,10 +361,10 @@
   "Urls": "http://www.indewaag.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20140422/5713f1af-c684-40a5-949d-f0e93bba6d21.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "27",
+  "id": 27,
   "TitleEN": "Diamant Museum (Amsterdam Diamond Museum)",
   "ShortdescriptionEN": "The Diamant Museum (Amsterdam Diamond Museum) takes you on a journey that began 3 billion years ago, 200 kilometres under the surface of the earth. The journey ends with the beautiful cut diamonds and the Amsterdam Diamond Museum. Come visit and learn more about Amsterdam?s roles as an important diamond centre for more than four centuries.",
   "City": "AMSTERDAM",
@@ -375,10 +375,10 @@
   "Urls": "http://www.diamantmuseumamsterdam.nl,http://www.amsterdamticketshop.nl/4701",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101124/2f87ff36-e979-4f0d-baef-4571c8c8a408.jpg",
   "Tripadvisor ratting": "3,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "28",
+  "id": 28,
   "TitleEN": "Dutch Accent",
   "ShortdescriptionEN": "A good stop for souvenirs that go beyond traditional Delftware mementoes and slogan t-shirts, Dutch Accent, located in the centre of Amsterdam, is both a gallery and a shop offering art, exclusive gifts and souvenirs. ",
   "City": "AMSTERDAM",
@@ -389,10 +389,10 @@
   "Urls": "http://www.dutch-accent.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/67/6724ce68-1ae4-4011-9841-de028f542408/2623419f-5858-4a8e-873f-a6fa8f0e914d.jpg",
   "Tripadvisor ratting": "5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "29",
+  "id": 29,
   "TitleEN": "Foam",
   "ShortdescriptionEN": "Foam is an internationally renowned Amsterdam museum that exhibits all genres of photography in a beautiful canal-side setting. As well as displaying a wide variety of works, it acts as a creative hub where photographers can meet and participate in forums and symposiums. ",
   "City": "AMSTERDAM",
@@ -403,10 +403,10 @@
   "Urls": "http://www.foam.org,http://www.amsterdamticketshop.nl/6120,http://www.facebook.com/FoamAmsterdam",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101124/e21ef06c-035c-4c24-ba92-5f60e9560590.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "30",
+  "id": 30,
   "TitleEN": "Galerie Mokum",
   "ShortdescriptionEN": "Founded in 1962, Galerie Mokum has focused on promoting Dutch figurative and realistic art for over forty years. The gallery frequently offers new exhibitions featuring a variety of established artists and new talent.",
   "City": "AMSTERDAM",
@@ -417,10 +417,10 @@
   "Urls": "http://www.galeriemokum.com/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101122/5e490eae-49bc-405d-8634-b44f841f5206.jpg",
   "Tripadvisor ratting": "3,8",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "31",
+  "id": 31,
   "TitleEN": "Heineken Experience",
   "ShortdescriptionEN": "Housed inside Heineken's historic brewery in the centre of Amsterdam, this interactive museum will take you on an exciting, behind-the-scenes journey through the wild world of one of Europe's most popular pilsners. It's now among the city's most visited attractions, drawing hundreds of thousands of visitors annually. ",
   "City": "AMSTERDAM",
@@ -431,10 +431,10 @@
   "Urls": "http://www.heinekenexperience.com,http://www.amsterdamticketshop.nl/4531",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101026/14652b47-e01f-4315-8208-28f96c060367.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "32",
+  "id": 32,
   "TitleEN": "Hermitage Amsterdam",
   "ShortdescriptionEN": "The Hermitage Amsterdam is the Dutch branch of the world-famous Hermitage museum in Saint Petersburg, Russia. Located on the banks of the Amstel River, the Hermitage Amsterdam is an exhibition space and cultural education centre with a focus on Russian history and culture.",
   "City": "AMSTERDAM",
@@ -445,10 +445,10 @@
   "Urls": "http://www.hermitage.nl/,http://www.amsterdamticketshop.nl/6122,http://www.facebook.com/hermitage.amsterdam",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/4a/4a57161c-9ebc-4175-98f4-37f79d7c1763/0192917c-b455-4490-81a1-e99d273bdfe2.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "33",
+  "id": 33,
   "TitleEN": "Hortus Botanicus Amsterdam (Botanical Garden)",
   "ShortdescriptionEN": "For nearly four centuries, Amsterdam's Hortus Botanicus has regaled visitors with its lush greenhouses and exotic plants. Originally founded in 1638 to serve as a herb garden for the city's doctors and pharmacists, it's one of the oldest botanical gardens in the world.",
   "City": "AMSTERDAM",
@@ -459,10 +459,10 @@
   "Urls": "http://dehortus.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101028/c27ae575-ca2c-4a64-be3d-bb36f1aa24e0.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "34",
+  "id": 34,
   "TitleEN": "Hortus Botanicus Vrije Universiteit",
   "ShortdescriptionEN": "Large herbarium and tropical greenhouses with orchids, a collection of bonsai trees (Japanese miniature trees) and the largest collection of cactuses and succulents in The Netherlands.   ",
   "City": "AMSTERDAM",
@@ -473,10 +473,10 @@
   "Urls": "http://www.vu.nl/nl/over-de-vu/cultuur-kunst/hortus-botanicus/index.asp",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101122/8258bd68-becf-4c89-b0bf-6b177ca980d4.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "35",
+  "id": 35,
   "TitleEN": "Klimmuur Centraal",
   "ShortdescriptionEN": "Climbing hall. The location is highly suitable for company outings and it is possible to combine a visit to this hall with a canal tour or water taxi.",
   "City": "AMSTERDAM",
@@ -487,10 +487,10 @@
   "Urls": "http://www.deklimmuur.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20121210/77297743-8221-4235-a2fb-ed8b3eb9b663.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "36",
+  "id": 36,
   "TitleEN": "Koninklijk Paleis (Royal Palace)",
   "ShortdescriptionEN": "The Koninklijk Paleis (Royal Palace) on Amsterdam's Dam Square is one of three palaces still in use by the Dutch royal family. It is used for state visits, award ceremonies and other official receptions. When the palace is not being used by the royal family, it is open to the public. Visitors can explore the magnificent interior and discover the rich history of the building.",
   "City": "AMSTERDAM",
@@ -501,10 +501,10 @@
   "Urls": "http://www.paleisamsterdam.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101125/7e4a86f3-a549-4e6a-a44a-a45e7bfb23d6.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "37",
+  "id": 37,
   "TitleEN": "Medieval Torture Museum",
   "ShortdescriptionEN": "The Medieval Torture Museum has a collection of more than 100 devices used for torture in medieval times. This unique collection of photos, drawings and instruments of torture reveals the grim character of the middle ages.",
   "City": "AMSTERDAM",
@@ -515,10 +515,10 @@
   "Urls": "http://www.tortureamsterdam.com/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/f8271ee2-e0ba-4929-a827-84579ddc1095.jpg",
   "Tripadvisor ratting": "3",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "38",
+  "id": 38,
   "TitleEN": "NEMO Science Museum",
   "ShortdescriptionEN": "Take a voyage of discovery at NEMO Science Museum in Amsterdam, where children can playfully experience science and technology all day long. The museum is situated in an unmistakable, sloping green building, set amidst the city's Eastern Docklands.",
   "City": "AMSTERDAM",
@@ -529,10 +529,10 @@
   "Urls": "http://www.nemosciencemuseum.nl/,http://www.amsterdamticketshop.nl/1125,http://www.facebook.com/NEMOsciencemuseum",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/33/3329e497-a157-440c-840f-69307ae362a7/50753f00-70c0-4a24-b85d-77dd69aa25d6.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "39",
+  "id": 39,
   "TitleEN": "Noorderkerk",
   "ShortdescriptionEN": "The Noorderkerk is a lovely 16th-century church located in the centre of Amsterdam in the charming Jordaan district. Besides functioning as an active protestant church, the building serves as one of the city's most beautiful event venues.",
   "City": "AMSTERDAM",
@@ -543,10 +543,10 @@
   "Urls": "http://www.noorderkerk.org,http://www.noorderkerkconcerten.nl,http://www.facebook.com/noorderkerkconcerten",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/ad89f762-c397-4d07-8f76-bcff89f3d544.jpg",
   "Tripadvisor ratting": "3,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "40",
+  "id": 40,
   "TitleEN": "Olympic Stadium Amsterdam",
   "ShortdescriptionEN": "The Olympic Stadium, built for the 1928 games, has continued through the decades to play host to a multitude of events, sporting and otherwise. Located in Amsterdam Zuid, the monument also provides office space for upwards of thirty businesses.",
   "City": "AMSTERDAM",
@@ -557,10 +557,10 @@
   "Urls": "http://olympischstadion.nl/nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20120508/db620643-cde5-411e-a491-3ccdba24c3c7.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "41",
+  "id": 41,
   "TitleEN": "Onze Lieve Vrouwekerk (Church of Our Lady)",
   "ShortdescriptionEN": "The Onze Lieve Vrouwe Kerk (Church of Our Lady) is also known as the Keizersgrachtkerk. This neo-gothic church was built between 1852 and 1854, and is used for services by the Syrian Orthodox community, the Surinamese Roman Catholic community and the general Roman-Catholic community.",
   "City": "AMSTERDAM",
@@ -571,10 +571,10 @@
   "Urls": "http://www.amsterdam.onze-lieve-vrouw.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/00f57e2b-d1c6-4464-addf-67ff8128111e.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "42",
+  "id": 42,
   "TitleEN": "Red Light Secrets",
   "ShortdescriptionEN": "Experience an intriguing world that remains hidden to many as you uncover the truth behind Amsterdam's most notorious neighbourhood: the Red Light District.",
   "City": "AMSTERDAM",
@@ -585,10 +585,10 @@
   "Urls": "http://www.redlightsecrets.com/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/92/926fa07b-8be5-498e-8c42-677b8e22c67b/62aa3af3-4ae8-42d5-951f-9c0dcaed0475.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "43",
+  "id": 43,
   "TitleEN": "Rijksakademie van beeldende kunsten (national academy of fine arts)",
   "ShortdescriptionEN": "The Rijksakademie van beeldende kunsten (national academy of fine arts) in Amsterdam is an institute for exceptionally talented artists from all over the world. The Rijksakademie provides 50 artists with the opportunity to research, experiment and produce new works over a two-year period.",
   "City": "AMSTERDAM",
@@ -599,10 +599,10 @@
   "Urls": "http://www.rijksakademie.nl,http://www.facebook.com/rijksakademie",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20130624/7e4f8669-1d55-4e32-91f2-0a4c34cd8c60.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "44",
+  "id": 44,
   "TitleEN": "Rijksmuseum",
   "ShortdescriptionEN": "The Rijksmuseum is one of Amsterdam?s grandest and most popular museums. Its vast collection showcases iconic art and a wide variety of artefacts that reflect more than 800 years of Dutch and global history, including jaw dropping paintings by the likes of Rembrandt, Van Gogh and countless more Dutch greats.",
   "City": "AMSTERDAM",
@@ -613,10 +613,10 @@
   "Urls": "http://www.rijksmuseum.nl/,http://www.facebook.com/rijksmuseum",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101207/b26d2609-979f-49cf-bb77-77a84acc1208.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "45",
+  "id": 45,
   "TitleEN": "Stedelijk Museum",
   "ShortdescriptionEN": "Situated on Museumplein, where it first opened in 1895, Amsterdam's Stedelijk Museum is the largest Dutch museum dedicated to modern and contemporary art and design. The collection contains extraordinary pieces of art by world-renowned artists, including a great number of works by major twentieth-century Dutch artists.",
   "City": "AMSTERDAM",
@@ -627,10 +627,10 @@
   "Urls": "http://www.stedelijk.nl/,http://www.facebook.com/Stedelijk",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101215/5fec99a7-9084-4269-8d97-0c229c02b394.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "46",
+  "id": 46,
   "TitleEN": "The Amsterdam (VOC ship)",
   "ShortdescriptionEN": "The Amsterdam was an 18th-century VOC (Dutch East India Company) vessel which was used as a cargo ship. The Amsterdam has been moored next the National Maritime Museum since 1991. This boat is actually a replica - the original was wrecked during a violent storm on its way to the Far East in 1749. You can visit the Amsterdam with a ticket of the National Maritime Museum.",
   "City": "AMSTERDAM",
@@ -641,10 +641,10 @@
   "Urls": "http://www.hetscheepvaartmuseum.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/a67f3c89-74f2-4dbf-9b5e-77e90173a5db.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "47",
+  "id": 47,
   "TitleEN": "The Amsterdam Dungeon",
   "ShortdescriptionEN": "Always a popular tourist attraction in the old heart of the city, the Amsterdam Dungeon is bigger and bolder than ever before. ",
   "City": "AMSTERDAM",
@@ -655,10 +655,10 @@
   "Urls": "http://www.theamsterdamdungeon.nl,http://www.amsterdamticketshop.nl/4450",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/1a0b8a0d-ed4c-4097-83d9-0b4e2c620915.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "48",
+  "id": 48,
   "TitleEN": "Tropenmuseum",
   "ShortdescriptionEN": "Amsterdam's Tropenmuseum (Museum of the Tropics) is a museum about people, housed in an impressive listed building overlooking Amsterdam?s Oosterpark. The extensive permanent display and regularly changing exhibitions feature objects that all have a story to tell about humankind. Through these stories about universal human themes, such as mourning, celebration, ornamentation, prayer and conflict, visitors can glimpse the past, present and future of non-Western cultures around the globe.",
   "City": "AMSTERDAM",
@@ -669,10 +669,10 @@
   "Urls": "http://www.tropenmuseum.nl,http://www.facebook.com/tropenmuseum",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/05/0505f9b2-6ead-46c8-bb9b-178ffe219c79/f77b5152-237e-49c5-89df-86553cb2b66a.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "49",
+  "id": 49,
   "TitleEN": "Van Gogh Museum",
   "ShortdescriptionEN": "The Van Gogh Museum in Amsterdam is one of the most popular museums in the world, attracting visitors from every corner of the globe. Naturally, this is in large part due to it housing the largest collection of works by Vincent van Gogh ? more than 200 paintings, 500 drawings and 700 of his letters. Having originally opened on Museumplein in 1973, the Van Gogh Museum has been expanded and modernised over the years, ensuring it's a truly cutting-edge exhibition and visitor space.",
   "City": "AMSTERDAM",
@@ -683,10 +683,10 @@
   "Urls": "http://www.vangoghmuseum.nl/,http://www.facebook.com/VanGoghMuseum",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/cb/cbf77bab-b6c9-4443-b62b-4ec7c01a7f52/af75d487-19fe-45d6-bfd5-bd21102536fd.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "50",
+  "id": 50,
   "TitleEN": "Venustempel Sex Museum",
   "ShortdescriptionEN": "Located in the centre of Amsterdam, the Venustempel (temple of Venus) is the world's first and oldest sex museum. The museum looks at many aspects of sensual love through the ages, displaying an extensive collection of erotic pictures, paints, recordings, photographs and more. The vast collection was personally gathered by the museum?s owners and is now on permanent display in their 17th-century property on the Damrak.",
   "City": "AMSTERDAM",
@@ -697,10 +697,10 @@
   "Urls": "http://www.sexmuseumamsterdam.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101215/d7149fdc-2c08-4f91-b29b-da8d1225adf4.jpg",
   "Tripadvisor ratting": "3,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "51",
+  "id": 51,
   "TitleEN": "Vondelpark",
   "ShortdescriptionEN": "The Vondelpark is Amsterdam's most popular park, attracting thousands of tourists, residents and everyone in between every day. ",
   "City": "AMSTERDAM",
@@ -711,10 +711,10 @@
   "Urls": "http://www.hetvondelpark.net/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101122/cfa10ec2-dbc1-4e03-a3a4-38d347faf07b.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "52",
+  "id": 52,
   "TitleEN": "De Hallen Haarlem",
   "ShortdescriptionEN": "De Hallen is Haarlem's modern and contemporary art museum, hosting exhibitions examining the latest developments in the visual arts and offering up-and-coming artists a platform to exhibit their work.",
   "City": "HAARLEM",
@@ -725,10 +725,10 @@
   "Urls": "http://www.dehallenhaarlem.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20141023/d6437e90-81a4-4fe9-8591-041777a7c6ba.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "53",
+  "id": 53,
   "TitleEN": "Frans Hals Museum",
   "ShortdescriptionEN": "Haarlem's Frans Hals Museum is home to the largest collection of paintings by Frans Hals in the world.",
   "City": "HAARLEM",
@@ -739,10 +739,10 @@
   "Urls": "http://www.franshalsmuseum.nl,https://www.facebook.com/franshalsmuseum/,http://www.amsterdamticketshop.nl/nl/excursion/step1/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/86/86268170-b538-412c-b007-ea56794dda8b/8ffd5f61-179e-4c30-bc4b-f20ab3521f85.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "54",
+  "id": 54,
   "TitleEN": "Het Dolhuys",
   "ShortdescriptionEN": "Dating back to 1320, this former mental health institution is now home to the national psychiatry museum: an initiative driven by seven psychiatric hospitals.",
   "City": "HAARLEM",
@@ -753,10 +753,10 @@
   "Urls": "http://www.hetdolhuys.nl,http://www.hetdolhuys.nl,http://www.hetdolhuys.nl,http://www.hetdolhuys.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/be/bedbfaea-1d25-43b7-9f8d-da54a2c55be3/80b1cce8eeb5cd6002e4aa77a5c61b3e018dfd10.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "55",
+  "id": 55,
   "TitleEN": "Molen de Adriaan",
   "ShortdescriptionEN": "No visit to Haarlem is complete without calling by for a guided tour of the Molen de Adriaan, a windmill close to the town centre. Set in a picturesque location alongside the Spaarne River, this tower mill has been one of the most striking features of the Haarlem skyline for centuries.",
   "City": "HAARLEM",
@@ -767,10 +767,10 @@
   "Urls": "http://www.molenadriaan.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20141022/fac6b1d8-e26d-4620-b96e-a97f7b7ed363.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "56",
+  "id": 56,
   "TitleEN": "Teylers Museum",
   "ShortdescriptionEN": "One of the oldest museums in the country, the Teylers Museum invites visitors to delve into the wonderful worlds of art and science. ",
   "City": "HAARLEM",
@@ -781,10 +781,10 @@
   "Urls": "http://www.teylersmuseum.nl,http://www.amsterdamticketshop.nl/6143",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20141022/bedafd24-015b-412e-8e8e-dea8a4ed9d98.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "57",
+  "id": 57,
   "TitleEN": "Forteiland IJmuiden",
   "ShortdescriptionEN": "The Forteiland IJmuiden is an island fortress located near the town of IJmuiden, in the mouth of the North Sea Canal. It was constructed in the 1880s to help defend the surrounding area and restrict shipping traffic heading for Amsterdam. This iconic post is actually half underground and is the largest building in the Defence Line of Amsterdam ? a UNESCO world monument.",
   "City": "IJMUIDEN",
@@ -795,10 +795,10 @@
   "Urls": "http://forteilandijmuiden.com/publieksdagen/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101116/27f8fdf6-fd65-4192-b208-5486c8daa7f6.jpg",
   "Tripadvisor ratting": "4,4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "58",
+  "id": 58,
   "TitleEN": "IJmuider Zee en Havenmuseum",
   "ShortdescriptionEN": "IJmuiden is one of the biggest fishing harbours in Western Europe and a great deal of maritime activities take place here.",
   "City": "IJMUIDEN",
@@ -809,10 +809,10 @@
   "Urls": "http://www.zeehavenmuseum.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110217/5319c46f-ddb8-4bca-ac81-e2120fece5f1.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "59",
+  "id": 59,
   "TitleEN": "Nationaal Park Zuid-Kennemerland",
   "ShortdescriptionEN": "The National Park Zuid-Kennemerland is a remarkable expanse of dunes between Zandvoort and IJmuiden, covering approximately 38 hectares and attracting two million visitors each year.",
   "City": "IJMUIDEN",
@@ -823,10 +823,10 @@
   "Urls": "http://www.np-zuidkennemerland.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20120131/22517338-e19d-4891-b4f3-21e6299d3c22.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "60",
+  "id": 60,
   "TitleEN": "Aviodrome",
   "ShortdescriptionEN": "Head to Aviodrome Lelystad Airport for a high-flying day out! Delve into a century of aviation history at the impressive museum, explore a host of unique, original airplanes and get involved with an enormous programme of family fun.",
   "City": "LELYSTAD",
@@ -837,10 +837,10 @@
   "Urls": "http://www.aviodrome.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/bc/bc9ae864-e6dd-4ac1-b0b2-790961b96ae5/6ba7c78b-05ce-4672-a829-ebbae196f506.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "61",
+  "id": 61,
   "TitleEN": "Bataviawerf Lelystad",
   "ShortdescriptionEN": "Be transported back to the Golden Age at the Batavia Yard!",
   "City": "LELYSTAD",
@@ -851,10 +851,10 @@
   "Urls": "http://www.bataviawerf.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110217/2e979ec0-ea7f-499b-8a67-a3e5d46115fc.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "62",
+  "id": 62,
   "TitleEN": "Nieuw Land Erfgoedcentrum (New Land Heritage Centre)",
   "ShortdescriptionEN": "Nieuw Land is a museum, archive and research centre in one, where visitors of all ages can explore the history of Flevoland. ",
   "City": "LELYSTAD",
@@ -865,10 +865,10 @@
   "Urls": "http://www.nieuwlanderfgoed.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20120625/6846bb92-5152-4741-a598-7f83207ca622.jpg",
   "Tripadvisor ratting": "3,9",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "63",
+  "id": 63,
   "TitleEN": "Castle Keukenhof",
   "ShortdescriptionEN": "Take a detour from Amsterdam to visit the centuries-old Castle Keukenhof in Lisse. Located straight across from the world-famous Keukenhof Gardens, this castle boasts an impressive history with Golden Age roots.  ",
   "City": "LISSE",
@@ -879,10 +879,10 @@
   "Urls": "http://www.kasteelkeukenhof.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20141122/c0e19c7c-b68e-49de-acbe-ced410e1dda9.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "64",
+  "id": 64,
   "TitleEN": "Keukenhof Gardens",
   "ShortdescriptionEN": "Each spring, the Keukenhof Gardens in Lisse come alive with blooming flowers in every colour of the rainbow. Come tip-toe through the tulips at the world's largest flower gardens.  Keukenhof is open from 23 March 2017 up to 21 May 2017.",
   "City": "LISSE",
@@ -893,10 +893,10 @@
   "Urls": "http://www.keukenhof.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110218/cb0c1bec-ccd3-46b4-8ce7-1cd455cbf62f.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "65",
+  "id": 65,
   "TitleEN": "Museum 'De Zwarte Tulp'",
   "ShortdescriptionEN": "With the emphasis on tulips, the bulb cultivation and development of both the past and present, are vividly displayed in the museum.",
   "City": "LISSE",
@@ -907,10 +907,10 @@
   "Urls": "http://www.museumdezwartetulp.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/fe/fe7b7dba-c768-4713-8802-043f580d5dec/bdc01f62-6f32-4a98-be30-510bc023c58a.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "66",
+  "id": 66,
   "TitleEN": "Amsterdam Castle Muiderslot",
   "ShortdescriptionEN": "Located in Muiden to the east of Amsterdam, Amsterdam Castle Muiderslot?s legacy dates all the way back to 1280 when Count Floris V commissioned the construction of a stone fortress on the grounds. Part of the UNESCO-listed Defence Line of Amsterdam, the enchanting castle and gardens are a sure-fire hit with visitors of all ages.",
   "City": "MUIDEN",
@@ -921,10 +921,10 @@
   "Urls": "http://www.muiderslot.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110429/82519bf2-e7d6-48ec-b056-c79a58ac4033.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "67",
+  "id": 67,
   "TitleEN": "Muiden",
   "ShortdescriptionEN": "The fortified town of Muiden sits near the IJmeer, just east of Amsterdam. It dates back to the 10th century and is now known for its peaceful streets, small cafÃƒÂ©s, historic landmarks and picturesque harbour. The town is a key link in the Defence Line of Amsterdam, a 135 km-long fortification that once protected the city from invaders. Pass through Muiden?s centuries-old walls and prepare for a stroll through one of the country?s oldest communities.",
   "City": "MUIDEN",
@@ -935,10 +935,10 @@
   "Urls": "http://www.vvvgooivecht.nl/over-gooi-en-vecht/muiden",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/cb/cb39999f-32ee-4532-9eb9-6ccf66ea6195/d24c5281-221b-42fc-b9c4-d1b719e622d4.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "68",
+  "id": 68,
   "TitleEN": "Holland Casino Schiphol Airport",
   "ShortdescriptionEN": "Holland Casino offers American Roulette, Black Jack and a wide range of gambling machines. Its situated at the Holland Boulevard, between gate E and F. The Holland Casino is open daily from 6.30 AM to 7.30 PM.",
   "City": "SCHIPHOL",
@@ -949,10 +949,10 @@
   "Urls": "http://www.hollandcasino.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20121211/e25f3d78-d48a-466c-a585-48dd9db7060f.jpg",
   "Tripadvisor ratting": "3,4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "69",
+  "id": 69,
   "TitleEN": "NEMO Science Museum at Schiphol Airport",
   "ShortdescriptionEN": "If you're travelling with young ones, NEMO Science Museum shouldn't only be your first port of call in Amsterdam but also your last. NEMO has its own installation inside Amsterdam Airport Schiphol where young, enquiring minds and playful grownups can learn about the world of science and technology before flying.",
   "City": "SCHIPHOL",
@@ -963,10 +963,10 @@
   "Urls": "http://www.nemosciencemuseum.nl,http://www.facebook.com/NEMOsciencemuseum",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/e9/e957cdf6-efd3-4e22-aa3f-51db3b93c723/842419b6-3ef3-40cb-a856-f9b23acb7aff.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "70",
+  "id": 70,
   "TitleEN": "Rijksmuseum Amsterdam at Schiphol Airport",
   "ShortdescriptionEN": "Opened in December 2002, the Rijksmuseum at Schipol is the first ever museum in an airport, and the only auxiliary branch of the Rijksmuseum. You can visit the Rijksmusem at Schipol free of charge and the museum offers updated exhibits every few months. The museum is located between gates E and F, after the passport control area. It is open daily from 06:00 to 20:00.",
   "City": "SCHIPHOL",
@@ -977,10 +977,10 @@
   "Urls": "http://www.rijksmuseum.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101207/8bad2fee-f82d-4efe-9cdc-ee572723d0c5.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "71",
+  "id": 71,
   "TitleEN": "Country Estate Beeckestijn",
   "ShortdescriptionEN": "The Beeckestijn gardens are an outdoor museum.",
   "City": "VELSEN-ZUID",
@@ -991,10 +991,10 @@
   "Urls": "http://www.buitenplaatsbeeckestijn.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110218/0a96ae95-a7ca-45c3-93b4-8ce9a19c3f18.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "72",
+  "id": 72,
   "TitleEN": "Spaarnwoude recreational area",
   "ShortdescriptionEN": "The Spaarnwoude recreational area is located between Amsterdam, Haarlem and Velsen. At Spaarnwoude, you can walk, bike or skate while enjoying the typical Dutch landscape. There?s plenty of space to play and relax, as well as tons of activities like paintball, a climbing wall, putting green, canoeing, swimming and move. The recreational area is host to several large events every summer.",
   "City": "VELSEN-ZUID",
@@ -1005,10 +1005,10 @@
   "Urls": "http://www.spaarnwoude.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101207/15044b9d-b99c-482a-a19f-d12ca46e56d0.jpg",
   "Tripadvisor ratting": "4,3",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "73",
+  "id": 73,
   "TitleEN": "Zorgvrij Informatie Boerderij",
   "ShortdescriptionEN": "This educational farm sits amidst the recreation terrain of Spaarnwoude, specialising in dairy and sheep farming across its nine hectares of land.",
   "City": "VELSEN-ZUID",
@@ -1019,10 +1019,10 @@
   "Urls": "http://www.recreatienoordholland.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110218/18f62811-c767-4868-a708-dd96a4391072.jpg",
   "Tripadvisor ratting": "4,3",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "74",
+  "id": 74,
   "TitleEN": "Alida Hoeve cheese farm & De Vriendschap",
   "ShortdescriptionEN": "The Alida Hoeve cheese farm and De Vriendschap wooden shoe factory are located in Volendam, just 20 minutes north of Amsterdam by road. The Alida Hoeve is a typical Noord-Holland farmhouse with a 'cheese cover' roof. Where cows once grazed, there now stands a shop with cheese for sale. Visitors are welcomed by staff wearing traditional Volendam costume and who offer a comprehensive explanation about the preparation of the cheese.",
   "City": "VOLENDAM",
@@ -1033,10 +1033,10 @@
   "Urls": "http://www.cheesefarms.com",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/5c/5c9cd138-00e1-4505-bc58-fe1334f51f9d/90205370-b7c9-4153-b130-4e48f2d98a7b.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "75",
+  "id": 75,
   "TitleEN": "Cheese Factory Volendam",
   "ShortdescriptionEN": "Volendam is a village of fishermen, music and cheese. The Cheese Factory is one of the newest attractions in the centre of Volendam. Despite the name, it's much more than a factory, it is an interactive experience that will introduce you to the wonders of Dutch cheese.",
   "City": "VOLENDAM",
@@ -1047,10 +1047,10 @@
   "Urls": "http://www.tours-tickets.com/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20121114/4094908e-9701-433c-90de-b97bdcdd9f00.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "76",
+  "id": 76,
   "TitleEN": "Volendams Museum",
   "ShortdescriptionEN": "The Volendams Museum, located in the town of Volendam, is definitely one of the Netherlands' most unconventional museums. Head here if you're looking for a glimpse at some of the more unique elements of Dutch life from the 1800s and beyond.",
   "City": "VOLENDAM",
@@ -1061,10 +1061,10 @@
   "Urls": "http://www.volendamsmuseum.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110217/3a1e9430-33f1-4902-abd2-4e6e417759ee.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "77",
+  "id": 77,
   "TitleEN": "Catharina Hoeve cheese farm",
   "ShortdescriptionEN": "The Catharina Hoeve is an authentic 17th-century cheese farm, situated at the Zaanse Schans, close to Amsterdam. The Zaanse Schans is a popular tourist attraction for good reason: its historical wooden houses, warehouses and fully-operating windmills offer a true taste of 'Old Holland'. Upon arrival at the Catharina Hoeve you can attend a cheese making demonstration, as well as tasting the various products and exploring the gift shop, where you'll find a wide variety of cow, sheep and goat products. Entrance and tasting is free. Demonstrations are available in multiple languages.",
   "City": "ZAANDAM",
@@ -1075,10 +1075,10 @@
   "Urls": "http://www.cheesefarms.com",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/3e/3ed5c8e2-2e83-4bdc-8fbb-8746226bdb0a/948344fd-a7d0-4e58-9ef7-ca352a5fe19b.jpg",
   "Tripadvisor ratting": "4",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "78",
+  "id": 78,
   "TitleEN": "Czar Peter House",
   "ShortdescriptionEN": "The Czar Peter House is a humble dwelling that famously housed Peter the Great during his first eight days in the Netherlands. In the 17th century, the area around what is now known as Zaandam was a renowned shipbuilding district, and Peter had visited the region to learn about Dutch techniques. Fittingly, the old wooden house in which he slept was constructed from repurposed ship materials.",
   "City": "ZAANDAM",
@@ -1089,10 +1089,10 @@
   "Urls": "http://www.zaansmuseum.nl/",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20110217/cbc75a1d-871e-4c6d-a24e-bcaedaa05768.jpg",
   "Tripadvisor ratting": "4,5",
-  "user rating": "0"
+  "user rating": 0
   },
   {
-  "id": "79",
+  "id": 79,
   "TitleEN": "De Zaanse Schans Clog Workshop",
   "ShortdescriptionEN": "Visit the wooden shoe workshop at the Zaanse Schans! See the clog makers at work in the workshop and learn about the history of wooden shoes in the museum - admission is free.",
   "City": "ZAANDAM",
@@ -1103,6 +1103,6 @@
   "Urls": "http://www.clogs.nl",
   "Thumbnail": "https://media.iamsterdam.com/ndtrc/Images/20101109/7fb206cf-542d-45b0-9e4e-922a5bd8ffeb.jpg",
   "Tripadvisor ratting": "4,6",
-  "user rating": "0"
+  "user rating": 0
   }
   ]
