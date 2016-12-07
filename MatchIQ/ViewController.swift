@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var card: UIImageView!
     
     @IBOutlet weak var cardLabel: UILabel!
@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+//        jsonParser()
+        csvParser()
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -46,6 +46,10 @@ class ViewController: UIViewController {
         imagedatabse[1] = imageList[1]
         let p = CGPoint(x: 10, y: 10)
         card.image = textToImage(drawText: "test", inImage: UIImage(named: imageList[imageIndex])!, atPoint: p)
+        
+        
+        
+        super.viewDidLoad()
         
     }
     
@@ -139,6 +143,54 @@ class ViewController: UIViewController {
         return newImage!
         
     }
+    
+    
+    func csvParser(){
+        do {
+            let fileManager = FileManager.default
+            let path = fileManager.currentDirectoryPath
+            print(path)
+            let csvData = try String(contentsOfFile: path + "data.csv")
+            let csv = csvData.csvRows()
+            for row in csv {
+                print(row)
+            }
+        } catch {  
+            print(error)  
+        }
+    }
+    
+    enum JSONError: String, Error {
+        case NoData = "ERROR: no data"
+        case ConversionFailed = "ERROR: conversion from JSON failed"
+    }
+    
+    func jsonParser() {
+        let urlPath = "http://open.datapunt.amsterdam.nl/Attracties.json"
+        guard let endpoint = URL(string: urlPath) else {
+            print("Error creating endpoint")
+            return
+        }
+        let request = URLRequest(url: endpoint)
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            do {
+                guard let data = data else {
+                    throw JSONError.NoData
+                }
+                guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary else {
+                    throw JSONError.ConversionFailed
+                }
+                print(json)
+            } catch let error as JSONError {
+                print(error.rawValue)
+            } catch let error as NSError {
+                print(error.debugDescription)
+            }
+            }.resume()
+    }
+    
+    
+    
     
 }
 
