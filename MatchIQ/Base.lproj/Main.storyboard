@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="596" y="-99.400299850074973"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Favorites-->
         <scene sceneID="rjL-CZ-xoY">
             <objects>
                 <tableViewController id="PSy-cu-qf4" customClass="TableViewController" customModule="MatchIQ" customModuleProvider="target" sceneMemberID="viewController">
@@ -120,6 +120,13 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Favorites" id="c8e-QM-FOM">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="FDf-Dz-t7f">
+                            <connections>
+                                <segue destination="R7B-Gd-Mdc" kind="show" id="esS-cZ-Pah"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="TheTableView" destination="CIe-AI-X8f" id="T3p-ib-AlO"/>
                     </connections>
@@ -127,6 +134,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSK-vc-tic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2032.8" y="6.746626686656672"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="yPG-Nu-Ml7">
+            <objects>
+                <viewController title="Map" id="R7B-Gd-Mdc" customClass="MapViewController" customModule="MatchIQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eWT-w8-LTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="WLA-xb-rDe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JPp-GZ-YNg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="G5A-VE-oVG">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="5rH-qF-5gE"/>
+                    <connections>
+                        <outlet property="MapView" destination="G5A-VE-oVG" id="WvC-VH-j8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mM9-6X-jww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3301.5999999999999" y="-47.226386806596707"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="QJE-Op-8G2">

@@ -19,6 +19,8 @@
 		C1B636C91DF968E6005E55FB /* MatchIQ.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B636C81DF968E6005E55FB /* MatchIQ.png */; };
 		C1B636CB1DF97867005E55FB /* dataset cleaned 7dec comma to dot.csv in Resources */ = {isa = PBXBuildFile; fileRef = C1B636CA1DF97867005E55FB /* dataset cleaned 7dec comma to dot.csv */; };
 		C1B636CD1DF978CE005E55FB /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C1B636CC1DF978CE005E55FB /* data.json */; };
+		C1B636CF1DF97CAB005E55FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B636CE1DF97CAB005E55FB /* MapViewController.swift */; };
+		C1B636D11DF97DD0005E55FB /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B636D01DF97DD0005E55FB /* AnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C1B636C81DF968E6005E55FB /* MatchIQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MatchIQ.png; sourceTree = "<group>"; };
 		C1B636CA1DF97867005E55FB /* dataset cleaned 7dec comma to dot.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dataset cleaned 7dec comma to dot.csv"; sourceTree = "<group>"; };
 		C1B636CC1DF978CE005E55FB /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		C1B636CE1DF97CAB005E55FB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C1B636D01DF97DD0005E55FB /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +77,11 @@
 				C1B636C81DF968E6005E55FB /* MatchIQ.png */,
 				C11ABB461DF86580006319CE /* SwiftyJSON.swift */,
 				C173EDF41DEF3E8C0003EF06 /* AppDelegate.swift */,
+				C11ABB341DF823A1006319CE /* SettingViewController.swift */,
 				C173EDF61DEF3E8C0003EF06 /* ViewController.swift */,
 				C1A783AB1DF727ED000A2C9C /* TableViewControlller.swift */,
-				C11ABB341DF823A1006319CE /* SettingViewController.swift */,
+				C1B636CE1DF97CAB005E55FB /* MapViewController.swift */,
+				C1B636D01DF97DD0005E55FB /* AnnotationView.swift */,
 				C173EDF81DEF3E8C0003EF06 /* Main.storyboard */,
 				C173EDFE1DEF3E8C0003EF06 /* Assets.xcassets */,
 				C173EE001DEF3E8C0003EF06 /* LaunchScreen.storyboard */,
@@ -166,7 +172,9 @@
 				C173EDF71DEF3E8C0003EF06 /* ViewController.swift in Sources */,
 				C11ABB471DF86580006319CE /* SwiftyJSON.swift in Sources */,
 				C173EDFD1DEF3E8C0003EF06 /* MatchIQ.xcdatamodeld in Sources */,
+				C1B636D11DF97DD0005E55FB /* AnnotationView.swift in Sources */,
 				C173EDF51DEF3E8C0003EF06 /* AppDelegate.swift in Sources */,
+				C1B636CF1DF97CAB005E55FB /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
