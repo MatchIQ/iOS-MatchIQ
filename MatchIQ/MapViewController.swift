@@ -39,7 +39,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             let results = try managedContext.fetch(fetchRequest)
             for card in results {
                 let location = CLLocationCoordinate2D(latitude: CLLocationDegrees(card.latitude!)!, longitude: CLLocationDegrees(card.longitude!)!)
-                let ann = AnnotationView(coordinate: location, title: card.title!, subtitle: "Trip Advisor Ratting" + card.trip_advisor_rating!)
+                let ann = AnnotationView(coordinate: location, title: card.title!, subtitle: card.address! + " " + card.city! + " " + card.zipcode!)
                 annotations.append(ann)
             }
         } catch let error as NSError {
@@ -83,27 +83,49 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
    
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            let annotation = annotation as? AnnotationView
-            var view: MKPinAnnotationView
-            let identifier = "pin"
-            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//            let theimage = UIImage(data:annotation!.imagedata as Data)
-//            let hasAlpha = false
-//            let scale: CGFloat = 0.0 // Automatically use scale factor of main screen
-//            let size = theimage!.size.applying(CGAffineTransform(scaleX: 0.5, y: 0.5))
-//            UIGraphicsBeginImageContextWithOptions(size, !hasAlpha, scale)
-//            theimage!.draw(in: CGRect(origin: CGPoint(x: 0, y: 0), size: size))
-//            let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
-//            UIGraphicsEndImageContext()
-//            view.image = scaledImage
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: 0, y: 0)
-            return view
+        let annotation = annotation as? AnnotationView
+        var view: MKPinAnnotationView
+        let identifier = "pin"
+        view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+        view.canShowCallout = true
+        view.calloutOffset = CGPoint(x: 0, y: 0)
+        let btn = UIButton(type: .detailDisclosure)
+        view.rightCalloutAccessoryView = btn
+        return view
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        _ = view.annotation as! AnnotationView
+        let ann = view.annotation as! AnnotationView
+        
+        
+        
+        // Create the alert controller
+        let alertController = UIAlertController(title: "Direction", message: "Pick your favorite routing app", preferredStyle: .actionSheet)
+        
+        // Create the actions
+        let applemapAction = UIAlertAction(title: "Apple Map", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            NSLog("applemap Pressed")
+            let placemark = MKPlacemark(coordinate: ann.coordinate, addressDictionary: nil)
+            let mapItem = MKMapItem(placemark: placemark)
+            mapItem.name = ann.title
+            mapItem.openInMaps()
+        }
+        let googlemaplAction = UIAlertAction(title: "Google Map", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            NSLog("googlemap Pressed")
+        }
+        
+        // Add the actions
+        alertController.addAction(applemapAction)
+        alertController.addAction(googlemaplAction)
+        
+        // Present the controller
+        self.present(alertController, animated: true, completion: nil)
+        
     }
+    
+   
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         
