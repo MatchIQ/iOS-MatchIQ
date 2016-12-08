@@ -5,7 +5,7 @@
 //  Created by arash parnia on 30/11/2016.
 //  Copyright © 2016 arash parnia. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import CoreData
 
@@ -23,17 +23,21 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardDescription: UITextView!
     
-    var imageList:[String] = ["m0.jpg","m1.jpg", "m2.jpg", "m3.jpg"]
-    var imagedatabse = [Int: String]()
+    @IBOutlet weak var cardRating: UILabel!
     let maxImages = 3
     var imageIndex: NSInteger = 0
+    
+    
+
+    var results = [Cards]()
     
     
     
     override func viewDidLoad() {
         
-        
-//       parseJSON()
+//        managedContext.reset()
+//        removeAllFromManagedContext()
+//        parseJSON()
         
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
@@ -48,14 +52,27 @@ class ViewController: UIViewController {
         swipeUp.direction = UISwipeGestureRecognizerDirection.up
         self.view.addGestureRecognizer(swipeUp)
         
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.down
-        self.view.addGestureRecognizer(swipeDown)
+//        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+//        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+//        self.view.addGestureRecognizer(swipeDown)
         
-        imagedatabse[1] = imageList[1]
-        let p = CGPoint(x: 10, y: 10)
-        card.image = textToImage(drawText: "test", inImage: UIImage(named: imageList[imageIndex])!, atPoint: p)
         
+//        let p = CGPoint(x: 10, y: 10)
+//        card.image = textToImage(drawText: "test", inImage: UIImage(named: imageList[imageIndex])!, atPoint: p)
+        
+       
+        
+        let fetchRequest = NSFetchRequest<Cards>(entityName: "Cards")
+        let resultPredicate = NSPredicate(format: "user_rating == %@", "0")
+        
+        
+        fetchRequest.predicate = resultPredicate
+        
+        do {
+            results = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
         
         
         super.viewDidLoad()
@@ -74,6 +91,8 @@ class ViewController: UIViewController {
         let transition = CATransition()
         transition.type = kCATransitionReveal
         
+
+        
         
         //change transition based on swipe direction
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
@@ -83,9 +102,9 @@ class ViewController: UIViewController {
                 print("Swiped right")
                 transition.subtype = kCATransitionFromLeft
                 
-            case UISwipeGestureRecognizerDirection.down:
-                print("Swiped down")
-                transition.subtype = kCATransitionFromBottom
+//            case UISwipeGestureRecognizerDirection.down:
+//                print("Swiped down")
+//                transition.subtype = kCATransitionFromBottom
                 
             case UISwipeGestureRecognizerDirection.left:
                 print("Swiped left")
@@ -102,18 +121,28 @@ class ViewController: UIViewController {
         
         
         imageIndex += 1
-        if(imageIndex > maxImages) {imageIndex = 0;}
-        card.image =  UIImage(named: imageList[imageIndex])
-        cardLabel.text = imageList[imageIndex]
-        cardDescription.text = imageList[imageIndex]
+        print(imageIndex)
+        if(imageIndex > results.count) {
+            //request for more cards
+            
+            imageIndex = 0;
+        }else {
+        
+        let thumbnailURL = URL(string: results[imageIndex].thumbnail!)
+        card.downloadedFrom(url: thumbnailURL!)
+        cardLabel.text = results[imageIndex].title
+        cardRating.text = results[imageIndex].user_rating
+        cardDescription.text = results[imageIndex].shrt_description
+        
         
         CATransaction.begin()
         CATransaction.setAnimationDuration(0.5)
         card.layer.add(transition, forKey: kCATransition)
         cardLabel.layer.add(transition, forKey: kCATransition)
+        cardRating.layer.add(transition, forKey: kCATransition)
         cardDescription.layer.add(transition, forKey: kCATransition)
         CATransaction.commit()
-        
+        }
         
         
     }
@@ -155,11 +184,9 @@ class ViewController: UIViewController {
     
     
     
+    
     func parseJSON(){
-        let entity =  NSEntityDescription.entity(forEntityName: "Cards", in:managedContext)
-        let cards = NSManagedObject(entity: entity!, insertInto: managedContext)
         
-        removeAllFromManagedContext()
         
         let jsonpath = Bundle.main.path(forResource: "data", ofType: "json")
         let jsondata = NSData(contentsOfFile: jsonpath!)
@@ -168,6 +195,8 @@ class ViewController: UIViewController {
         let json = JSON(data: jsondata as! Data)
         
         for (_,subJson):(String, JSON) in json {
+            let entity =  NSEntityDescription.entity(forEntityName: "Cards", in:managedContext)
+            let cards = NSManagedObject(entity: entity!, insertInto: managedContext)
             
 //            print("id : " ,subJson["id"].stringValue)
             cards.setValue(subJson["id"].stringValue, forKey: "id")
@@ -181,6 +210,9 @@ class ViewController: UIViewController {
 //            print("Thumbnail : " ,subJson["Thumbnail"].stringValue)
             cards.setValue(subJson["Thumbnail"].stringValue, forKey: "thumbnail")
             
+            
+//            print("urls : " ,subJson["urls"].stringValue)
+            cards.setValue(subJson["urls"].stringValue, forKey: "urls")
             
 //            print("Adres : " ,subJson["Adres"].stringValue)
             cards.setValue(subJson["Adres"].stringValue, forKey: "address")
@@ -243,3 +275,25 @@ class ViewController: UIViewController {
 }
 
 
+
+////MARK: download image extention
+//extension UIImageView {
+//    func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+//        contentMode = mode
+//        URLSession.shared.dataTask(with: url) { (data, response, error) in
+//            guard
+//                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+//                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+//                let data = data, error == nil,
+//                let image = UIImage(data: data)
+//                else { return }
+//            DispatchQueue.main.async() { () -> Void in
+//                self.image = image
+//            }
+//            }.resume()
+//    }
+//    func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+//        guard let url = URL(string: link) else { return }
+//        downloadedFrom(url: url, contentMode: mode)
+//    }
+//}
