@@ -23,9 +23,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardDescription: UITextView!
     
-    @IBOutlet weak var cardRating: UILabel!
-    let maxImages = 3
-    var imageIndex: NSInteger = 0
+    
+    @IBOutlet weak var cardRating: UIProgressView!
+    
+    var cardIndex = -1
     
     
 
@@ -86,13 +87,12 @@ class ViewController: UIViewController {
     
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+       
+        var swipeRating = "0"
         
         //transition contant
         let transition = CATransition()
         transition.type = kCATransitionReveal
-        
-
-        
         
         //change transition based on swipe direction
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
@@ -100,6 +100,7 @@ class ViewController: UIViewController {
                 
             case UISwipeGestureRecognizerDirection.right:
                 print("Swiped right")
+                swipeRating = "1"
                 transition.subtype = kCATransitionFromLeft
                 
 //            case UISwipeGestureRecognizerDirection.down:
@@ -108,10 +109,12 @@ class ViewController: UIViewController {
                 
             case UISwipeGestureRecognizerDirection.left:
                 print("Swiped left")
+                swipeRating = "0"
                 transition.subtype = kCATransitionFromRight
                 
             case UISwipeGestureRecognizerDirection.up:
                 print("Swiped up")
+                swipeRating = "2"
                 transition.subtype = kCATransitionFromTop
                 
             default:
@@ -119,20 +122,32 @@ class ViewController: UIViewController {
             }
         }
         
+        if (cardIndex < results.count && cardIndex > -1){
+            results[cardIndex].user_rating = swipeRating
+            try! managedContext.save()
+        }
         
-        imageIndex += 1
-        print(imageIndex)
-        if(imageIndex > results.count) {
+        
+        cardIndex += 1
+        
+        
+        
+        if(cardIndex > results.count) {
             //request for more cards
             
-            imageIndex = 0;
+            card.image = UIImage(named: "MatchIQ.png")
         }else {
         
-        let thumbnailURL = URL(string: results[imageIndex].thumbnail!)
-        card.downloadedFrom(url: thumbnailURL!)
-        cardLabel.text = results[imageIndex].title
-        cardRating.text = results[imageIndex].user_rating
-        cardDescription.text = results[imageIndex].shrt_description
+        card.image = UIImage(data: results[cardIndex].thumbnail as! Data)
+        cardLabel.text = results[cardIndex].title
+            if let rating = Float(results[cardIndex].trip_advisor_rating!){
+                print(rating)
+                cardRating.progress = rating/5
+            }
+            else {
+                cardRating.progress = 0
+            }
+        cardDescription.text = results[cardIndex].shrt_description
         
         
         CATransaction.begin()
@@ -144,6 +159,7 @@ class ViewController: UIViewController {
         CATransaction.commit()
         }
         
+       
         
     }
     func textToImage(drawText: NSString, inImage: UIImage, atPoint: CGPoint) -> UIImage{
@@ -208,7 +224,9 @@ class ViewController: UIViewController {
             cards.setValue(subJson["ShortdescriptionEN"].stringValue, forKey: "shrt_description")
             
 //            print("Thumbnail : " ,subJson["Thumbnail"].stringValue)
-            cards.setValue(subJson["Thumbnail"].stringValue, forKey: "thumbnail")
+            let thumbnailURL = URL(string: subJson["Thumbnail"].stringValue)
+            let imagedata = NSData(contentsOf: thumbnailURL!)
+            cards.setValue(imagedata, forKey: "thumbnail")
             
             
 //            print("urls : " ,subJson["urls"].stringValue)
@@ -274,26 +292,3 @@ class ViewController: UIViewController {
     
 }
 
-
-
-////MARK: download image extention
-//extension UIImageView {
-//    func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
-//        contentMode = mode
-//        URLSession.shared.dataTask(with: url) { (data, response, error) in
-//            guard
-//                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-//                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-//                let data = data, error == nil,
-//                let image = UIImage(data: data)
-//                else { return }
-//            DispatchQueue.main.async() { () -> Void in
-//                self.image = image
-//            }
-//            }.resume()
-//    }
-//    func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
-//        guard let url = URL(string: link) else { return }
-//        downloadedFrom(url: url, contentMode: mode)
-//    }
-//}

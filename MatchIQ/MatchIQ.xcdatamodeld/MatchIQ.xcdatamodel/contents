@@ -7,7 +7,7 @@
         <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="shrt_description" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="trip_advisor_rating" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="urls" optional="YES" attributeType="String" syncable="YES"/>
@@ -15,6 +15,6 @@
         <attribute name="zipcode" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Cards" positionX="-63" positionY="-18" width="128" height="223"/>
+        <element name="Cards" positionX="-63" positionY="-18" width="128" height="225"/>
     </elements>
 </model>
