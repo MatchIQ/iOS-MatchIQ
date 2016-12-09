@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardRating: UIProgressView!
     
-    var cardIndex = -1
+    var cardIndex = 0
     
     
 
@@ -35,9 +35,15 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-//        managedContext.reset()
-//        removeAllFromManagedContext()
-//        parseJSON()
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        
+        if launchedBefore  {
+            print("Not first launch.")
+        } else {
+            print("First launch, setting UserDefault.")
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            SettingViewController().reloadDatabase()
+        }
         
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
@@ -62,6 +68,14 @@ class ViewController: UIViewController {
         
        
         
+        
+        super.viewDidLoad()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        cardIndex = 0
         let fetchRequest = NSFetchRequest<Cards>(entityName: "Cards")
         let resultPredicate = NSPredicate(format: "user_rating == %@", "0")
         
@@ -70,14 +84,32 @@ class ViewController: UIViewController {
         
         do {
             results = try managedContext.fetch(fetchRequest)
+            print("local db items", results.count)
+            if (!results.isEmpty) {
+                fillCard(cardIndex: cardIndex)}
+            
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
         
-        
-        super.viewDidLoad()
-        
+        super.viewWillAppear(animated)
     }
+    
+    func fillCard(cardIndex: Int) {
+        if (cardIndex <= results.count){
+        card.image = UIImage(data: results[cardIndex].thumbnail as! Data)
+        cardLabel.text = results[cardIndex].title
+        if let rating = Float(results[cardIndex].trip_advisor_rating!){
+            cardRating.progress = rating/5
+        }
+        else {
+            cardRating.progress = 0
+        }
+        cardDescription.text = results[cardIndex].shrt_description
+        }
+    }
+
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -86,13 +118,12 @@ class ViewController: UIViewController {
     
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-       
+        print("cardindex: ",cardIndex ," of ", results.count," cards")
         var swipeRating = "-1"
         
         //transition contant
         let transition = CATransition()
         transition.type = kCATransitionReveal
-        
         //change transition based on swipe direction
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
@@ -122,33 +153,6 @@ class ViewController: UIViewController {
             }
         }
         
-        if (cardIndex < results.count && cardIndex > -1){
-            results[cardIndex].user_rating = swipeRating
-            try! managedContext.save()
-        }
-        
-        
-        cardIndex += 1
-        
-        
-        
-        if(cardIndex > results.count) {
-            //request for more cards
-            
-            card.image = UIImage(named: "MatchIQ.png")
-        }else {
-        
-        card.image = UIImage(data: results[cardIndex].thumbnail as! Data)
-        cardLabel.text = results[cardIndex].title
-            if let rating = Float(results[cardIndex].trip_advisor_rating!){
-                print(rating)
-                cardRating.progress = rating/5
-            }
-            else {
-                cardRating.progress = 0
-            }
-        cardDescription.text = results[cardIndex].shrt_description
-        
         
         CATransaction.begin()
         CATransaction.setAnimationDuration(0.5)
@@ -157,9 +161,23 @@ class ViewController: UIViewController {
         cardRating.layer.add(transition, forKey: kCATransition)
         cardDescription.layer.add(transition, forKey: kCATransition)
         CATransaction.commit()
+        
+        
+        if (cardIndex <= results.count   && cardIndex > -1 && results.count>0){
+            results[cardIndex].user_rating = swipeRating
+            try! managedContext.save()
         }
         
-       
+        
+        if (cardIndex >= results.count-1 || results.isEmpty){
+            cardLabel.text = " Out of cards "
+            card.image = UIImage(named: "MatchIQ.png")
+            cardDescription.text = ""
+        } else {
+            cardIndex += 1
+            fillCard(cardIndex: cardIndex)
+        }
+        
         
     }
     func textToImage(drawText: NSString, inImage: UIImage, atPoint: CGPoint) -> UIImage{

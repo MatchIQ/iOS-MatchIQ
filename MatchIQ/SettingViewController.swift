@@ -15,10 +15,15 @@ class SettingViewController : UIViewController{
     
     
     @IBAction func resetapp(_ sender: Any) {
-        removeAllFromManagedContext()
-        parseJSON()
+      reloadDatabase()
     }
     
+    func reloadDatabase(){
+        managedContext.reset()
+        removeAllFromManagedContext()
+        parseJSON()
+        UserDefaults.standard.set(false, forKey: "launchedBefore")
+    }
     
     func parseJSON(){
         
@@ -30,7 +35,7 @@ class SettingViewController : UIViewController{
         let json = JSON(data: jsondata as! Data)
         
         for (_,subJson):(String, JSON) in json {
-            let entity =  NSEntityDescription.entity(forEntityName: "Cards", in:managedContext)
+            let entity =  NSEntityDescription.entity(forEntityName: "Cards", in: managedContext)
             let cards = NSManagedObject(entity: entity!, insertInto: managedContext)
             
             //            print("id : " ,subJson["id"].stringValue)
@@ -83,13 +88,10 @@ class SettingViewController : UIViewController{
             
             do {
                 try managedContext.save()
+                print("adding row")
             } catch let error as NSError  {
                 print("Could not save \(error), \(error.userInfo)")
             }
-            
-            //            for(key,value):(String,JSON) in subJson{
-            //                print(key," : ",value)
-            //            }
         }
         
         
