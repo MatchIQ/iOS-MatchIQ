@@ -27,7 +27,7 @@ class TableViewController : UITableViewController ,NSFetchedResultsControllerDel
         fetchRequest.sortDescriptors = [sortDescriptor]
         
         //Filter anything with userratting of 0
-        let resultPredicate = NSPredicate(format: "user_rating != %@", "0")
+        let resultPredicate = NSPredicate(format: "user_rating == %@", "2")
         fetchRequest.predicate = resultPredicate
         
         // Initialize Fetched Results Controller

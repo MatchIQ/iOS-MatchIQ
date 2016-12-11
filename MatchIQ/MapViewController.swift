@@ -30,7 +30,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     func makeAnnotationsFromCards(){
         
         let fetchRequest = NSFetchRequest<Cards>(entityName: "Cards")
-        let resultPredicate = NSPredicate(format: "user_rating != %@", "0")
+        let resultPredicate = NSPredicate(format: "user_rating == %@", "2")
         
         
         fetchRequest.predicate = resultPredicate
@@ -114,8 +114,18 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         let googlemaplAction = UIAlertAction(title: "Google Map", style: UIAlertActionStyle.default) {
             UIAlertAction in
             NSLog("googlemap Pressed")
+            if (UIApplication.shared.canOpenURL(NSURL(string:"comgooglemaps://")! as URL)) {
+                UIApplication.shared.openURL(NSURL(string:
+                    "comgooglemaps://?saddr=&daddr=\(ann.coordinate.latitude),\(ann.coordinate.longitude)&directionsmode=driving")! as URL)
+                
+            } else {
+                NSLog("Can't use comgooglemaps://");
+            }
+            
         }
         
+        
+
         // Add the actions
         alertController.addAction(applemapAction)
         alertController.addAction(googlemaplAction)

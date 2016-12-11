@@ -164,6 +164,7 @@ class ViewController: UIViewController {
         
         
         if (cardIndex <= results.count   && cardIndex > -1 && results.count>0){
+            print("saving")
             results[cardIndex].user_rating = swipeRating
             try! managedContext.save()
         }
